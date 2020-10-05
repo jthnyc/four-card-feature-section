@@ -1,2 +1,54 @@
 html {
+  font-family: "Poppins", serif;
+  font-size: 15px;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --verydarkblue: hsl(234, 12%, 34%);
+  --grayishblue: hsl(229, 6%, 66%);
+  --lightgray: hsl(0, 0%, 98%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--lightgray);
+  box-shadow: 2px 2px 2px 5px lightgray;
+  width: 60%;
+  height: 80%;
+  position: relative;
+  top: 200px;
+  left: 250px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  align-items: center;
+  width: 50%;
+}
+
+.main header {
+  font-size: 25px;
+}
+
+.pre-tag {
+  color: var(--grayishblue);
+}
+
+.main-tag {
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted blue;
+  width: 250px;
+  height: 150px;
 }
