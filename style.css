@@ -13,24 +13,26 @@ html {
 .container {
   display: flex;
   flex-direction: column;
-  border: 2px solid var(--lightgray);
-  box-shadow: 2px 2px 2px 5px lightgray;
+  border: 0.5px solid var(--lightgray);
+  box-shadow: 2px 10px 10px 2px lightgray;
   width: 60%;
-  height: 80%;
   position: relative;
-  top: 200px;
-  left: 250px;
+  top: 100px;
+  left: 280px;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  background-color: #fafafa;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   align-items: center;
-  width: 50%;
+  width: 40%;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .main header {
@@ -45,10 +47,68 @@ html {
   font-weight: 700;
 }
 
+.main p {
+  font-size: 12px;
+  color: var(--grayishblue);
+  text-align: center;
+}
+
+.cards {
+  /* border: 2px solid gold; */
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(8, 70px);
+  column-gap: 10px;
+  margin-top: 40px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
-  border: 1px dotted blue;
+  /* border: 1px dotted blue; */
   width: 250px;
   height: 150px;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: 2px 6px 8px -1px var(--grayishblue);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.left {
+  border-top: 3px solid var(--cyan);
+  grid-column: 1;
+  grid-row: 2 / 8;
+}
+
+.top {
+  border-top: 3px solid var(--red);
+  grid-column: 2;
+  grid-row: 1 / 6;
+}
+
+.right {
+  border-top: 3px solid var(--blue);
+  grid-column: 3;
+  grid-row: 2 / 8;
+}
+
+.bottom {
+  border-top: 3px solid var(--orange);
+  grid-column: 2;
+  grid-row: 4 / 9;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-title {
+  font-style: bold;
+}
+
+.card p {
+  font-size: 10px;
+  color: var(--grayishblue);
 }
